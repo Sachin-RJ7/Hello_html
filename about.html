@@ -111,16 +111,92 @@
             </p>
             <p>
                 <label for="password">Password: </label>
-                <input type="password" name="password" id="password" placeholder="Your secret"  required>
+                <input type="password" name="password" id="password" placeholder="Your secret" required>
             </p>
             <p>
                 <label for="phone">Phone No:: </label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="777777777" autocomplete="on" required>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="777777777"
+                    autocomplete="on" required>
             </p>
             <p>
                 <label for="decad">Favourite Decade: </label>
-                <input type="number" name="decad" id="decad" min="1920" max="2022" step="10" value="1980" >
+                <input type="number" name="decad" id="decad" min="1920" max="2022" step="10" value="1980">
             </p>
+            <fieldset>
+                <legend>Person Info</legend>
+            <label for="coffee">Favourite Coffee</label>
+            <select name="coffee" id="coffee" multiple size="5" >
+                <optgroup label="Iced Coffees">
+                    <option value="iced Coffee">Iced Coffee</option>
+                    <option value="cold Brew">Cold Brew</option>
+                    <option value="frappuccino">Frappuccino</option>
+                    <option value="iced Espresso" >Iced Espresso</option>
+                </optgroup>
+                <optgroup label="Coffee Drinks">
+                    <option value="brown coffee">Brown coffee</option>
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="americano">Americano</option>
+                    <option value="espresso">Espresso</option>
+                </optgroup>
+            </select>
+            <p>
+                <label for="coffee">Favourite Coffee</label>
+                <input type="text" name="coffee" id="coffee" list="coffee-list">
+                <datalist id="coffee-list">
+                    <option value="coffee">
+                    <option value="late">
+                    <option value="espresso">
+                    <option value="cordato">
+                    <option value="americano">
+                </datalist>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What Is Your Favourite Food ?</legend>
+            <p>
+                <input type="checkbox"  id="hot-dog" name="hot-dog" >
+                <label for="hot-dog">Hot dogs</label>
+            </p>
+            <p>
+                <input type="checkbox"  id="nachos" name="nachos" >
+                <label for="nachos">Nachos</label>
+            </p>
+            <p>
+                <input type="checkbox"  id="reben" name="reben" >
+                <label for="reben">Reuben sandwich</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What Is Your Favourite Pet ?</legend>
+            <p>
+                <input type="radio"  id="cat" name="pets" value="pets" >
+                <label for="cat">Cat</label>
+            </p>
+            <p>
+                <input type="radio"  id="dog" name="pets" value="dog">
+                <label for="dog">Dog</label>
+            </p>
+            <p>
+                <input type="radio"  id="elephant" name="pets" value="elephant">
+                <label for="elephant">Elephant</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Send Me A Message</legend>
+            <br>
+            <label for="messaga">Your Message</label>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write you message"></textarea>
+            <br>
+            <br>
+        </fieldset>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
         </form>
     </article>
 
